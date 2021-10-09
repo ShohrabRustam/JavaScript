@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope Chain</title>
+</head>
+<body>
+    <h1>Important topic scope chain in js </h1>
+    <h2>The Scope Chain in JS </h2>
+    <p>Scope chain is directly related to laxical enviroment</p>
+    <p>
+<br>        function a()
+<br>{
+<br>    //local memory space
+<br>console.log(b + "  access the gobal variable  in side the b() function ");
+<br>c();
+<br>function c()
+<br>{
+<br>    console.log(b +" access global variable for inside the function c() which exist inside the function b");
+<br>}
+<br>}
+ 
+<br>var b = 10;
+<br>console.log(b + "  for global access");
+<br>a();
+    </p>
+    <script src="/JavaScript/scope_chain.js"></script>
+</body>
+</html>

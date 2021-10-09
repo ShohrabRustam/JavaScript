@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure in js </title>
+</head>
+<body>
+    <h2>closure in js </h2>
+
+    <h3>Example of the clouser is :</h3>
+    <p>
+<br>        function x()
+<br>{
+<br>var a= 20;
+<br>function y()
+<br>{
+<br>    console.log(a);
+<br>}
+<br>// y();
+<br>return y;
+<br>}
+<br>var z = x();
+<br>z();
+<br>or 
+<br>x()(); 
+    </p>
+    <script src="/JavaScript/closure.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack Function </title>
+</head>
+<body>
+
+    <h2> call back function </h2>
+    <p>
+<br>        setTimeout(function (){
+<br>        console.log("Hello Timer");
+<br>    },3000);
+<br>    
+<br>    function x(y){
+<br>        console.log("this is x function");
+<br>        y();
+<br>    }
+<br>     
+<br>    x(function y()
+<br>    {
+<br>        console.log("this is function y");
+<br>    })
+</p>
+
+    <button id = 'clickme'>clickme</button>
+    <script src="/JavaScript/callbackfun.js"></script>
+</body>
+</html>

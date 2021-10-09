@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Concept</title>
+</head>
+<body>
+    <h1>Object Concept </h1>
+    <p>
+        function myObject(){<br>
+            var a = 300; // it gave undefine<br>
+            this.x = 100;<br>
+            this.y = 200;<br>
+            this.z = function(){<br>
+                return this.x + this.y;<br>
+            } <br>
+         } <br>
+            var Obj = new myObject(); <br>
+            console.log(Obj.a);  <br>
+            console.log(Obj.x); <br>
+            console.log(Obj.y); <br>
+            console.log(Obj.z()); <br>
+            
+        
+    </p>
+
+  
+    <script src="/JavaScript/Object.js"></script>
+</body>
+</html>

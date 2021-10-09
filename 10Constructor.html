@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cunstructor</title>
+</head>
+<body>
+    <h2>Cunstructor and encaptulation</h2>
+
+    <p>
+<br>        function Counter(){
+<br>        var count = 0;
+<br>        this.incrementCounter = function(){
+<br>            count++;
+<br>            console.log(count);
+<br>        }
+<br>        this.decrementCounter = function()
+<br>        {
+<br>            count--;
+<br>            console.log(count);
+<br>        }
+<br>    }
+<br>    var counter1 =  new Counter();
+<br>    counter1.incrementCounter();
+<br>    counter1.decrementCounter();</p>
+    <script src="/JavaScript/constructor.js"></script>
+    
+</body>
+</html>

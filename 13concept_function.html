@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptof the function passing</title>
+</head>
+<body>
+    
+    <h2>Conceptof the function passing</h2>
+    <p>
+        var redius = [5,6,3,4];
+function calculateArea(radius){
+<br>    let output = []; 
+<br>    for (let i=0;i=radius.length;i++){
+<br>    output.push (Math.PI*radius[i]*redius[i]);
+<br>    }
+<br>    return output;
+<br>}
+<br>console.log(calculateArea(redius));
+<br>
+<br>function calculateCercumference(redius){
+<br>    let output = []; 
+<br>    for (let i=0;i=redius.length;i++){
+<br>    output.push (2*Math.PI*redius[i]);
+<br>    }
+<br>    return output;
+<br>}
+<br>console.log(calculateCercumference(redius));
+<br>
+<br>function calculateDiameter(redius){
+<br>    let output = []; 
+<br>    for (let i=0;i=redius.length;i++){
+<br>    output.push (2*redius[i]);
+<br>    }
+<br>    return output;
+<br>}
+<br>console.log(calculateDiameter(redius));
+
+</p>
+<h2>The Second reliable method is like that </h2>
+
+<p>
+<br>    var redius = [5,6,3,4];
+<br>
+<br>const area = function(redius){
+<br>    return Math.PI*redius*redius
+<br>}
+<br>
+<br>var cercumference = function (redius){
+<br>return 2* Math.PI*redius;
+<br>}
+<br>
+<br>const diameter = function(redius)
+<br>{
+<br>    return 2*redius;
+<br>}
+<br> 
+<br>const calculate = function (redius,logic){
+<br>const output  = [];
+<br>for (let i=0;i=redius.length;i++)
+<br>{
+<br>    output.push(logic(redius[i]));
+<br>}
+<br>return output;
+<br>}
+<br><h3>we can also use <u><i>redius.map(area)</i></u> in place of calculate </h3>
+<br>console.log(calculate(redius,area));
+</p>
+
+    <script src="/JavaScript/conceptOfFunction.js"></script>
+</body>
+</html>
